@@ -1,23 +1,25 @@
-  ______           _                _
- |  ____|         | |              (_)
- | |__   _ __ ___ | |__   ___ _ ___ _  ___
- |  __| | '_ ` _ \| '_ \ / _ \ '__/| |/ __|
- | |____| | | | | | |_) |  __/ | _ | |\__ \
- |______|_| |_| |_|_.__/ \___|_|(_)| ||___/
-                                  _/ |
-                                 |__/
+# ember-notes
 
-Your Ember.js project is almost ready! Here's how to get started:
+      ______           _                _
+     |  ____|         | |              (_)
+     | |__   _ __ ___ | |__   ___ _ ___ _  ___
+     |  __| | '_ ` _ \| '_ \ / _ \ '__/| |/ __|
+     | |____| | | | | | |_) |  __/ | _ | |\__ \
+     |______|_| |_| |_|_.__/ \___|_|(_)| ||___/
+                                      _/ |
+                                     |__/
 
-- Start writing your app in js/app.js.
+Your **Ember.js** project is almost ready! Here's how to get started:
 
-- Describe your application HTML in index.html.
+- Start writing your app in `js/app.js`.
 
-- During development, you can link to js/libs/ember-*.js to get the
+- Describe your application HTML in `index.html`.
+
+- During development, you can link to `js/libs/ember-*.js` to get the
   unminified version of Ember.js.
 
-- Add CSS to css/style.css
+- Add CSS to `css/style.css`
 
-== Contact =======================
+## Contact
 
-www.emberjs.com
+- www.emberjs.com
