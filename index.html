@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <script type="text/x-handlebars" id="notes">
+  <script type="text/x-handlebars" data-template-name="notes">
     <div id="notes" class="azure-blue-background azure-blue-border-thin">
       {{input valueBinding="newNoteName"}}
       <button {{action 'createNewNote'}}
@@ -32,7 +32,7 @@
     {{partial confirmDialog}}
   </script>
 
-  <script type="text/x-handlebars" id="notes/note">
+  <script type="text/x-handlebars" data-template-name="notes/note">
     <div id="selected-note">
       <h1>name: {{name}}</h1>
       {{view Ember.TextArea valueBinding="value"}}
@@ -41,7 +41,7 @@
     </div>
   </script>
 
-  <script type="text/x-handlebars" id="confirmDialog">
+  <script type="text/x-handlebars" data-template-name="confirmDialog">
     <div id="confirm-delete-note-dialog" class="modal fade">
       <div class="modal-dialog">
         <div class="modal-content">
