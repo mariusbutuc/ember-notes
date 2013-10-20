@@ -9,19 +9,61 @@
 </head>
 <body>
 
-  <script type="text/x-handlebars">
-    <h2>Welcome to Ember.js</h2>
+  <script type="text/x-handlebars" id="notes">
+    <div id="notes" class="azure-blue-background azure-blue-border-thin">
+      {{input valueBinding="newNoteName"}}
+      <button {{action 'createNewNote'}}
+              class="btn btn-default btn-xs">New Note</button>
+
+      <div class="list-group">
+        {{#each controller}}
+          {{#linkTo 'notes.note' this class="list-group-item"}}
+            {{name}}
+
+            <button {{action 'deleteNote' this}}
+                    class="btn btn-danger btn-xs pull-right">Delete</button>
+          {{/linkTo}}
+        {{/each}}
+      </div>
+    </div>
 
     {{outlet}}
+
+    {{partial confirmDialog}}
   </script>
 
-  <script type="text/x-handlebars" data-template-name="index">
-    <ul>
-    {{#each item in model}}
-      <li>{{item}}</li>
-    {{/each}}
-    </ul>
+  <script type="text/x-handlebars" id="notes/note">
+    <div id="selected-note">
+      <h1>name: {{name}}</h1>
+      {{view Ember.TextArea valueBinding="value"}}
+      <button {{action 'updateNote'}}
+              class="btn btn-primary form-control medium-top-padding">Update</button>
+    </div>
   </script>
+
+  <script type="text/x-handlebars" id="confirmDialog">
+    <div id="confirm-delete-note-dialog" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header center-align">
+            <h1 class="center-align">Delete selected note?</h1>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to delete the selected Note?
+            This action cannot be undone!
+          </div>
+          <div class="modal-footer">
+            <button {{action "cancelDelete"}}
+                    class="btn btn-default">Cancel</button>
+            <button {{action "confirmDelete"}}
+                    class="btn btn-primary">Delete Note</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </script>
+
 
   <script src="js/libs/jquery-1.9.1.js"></script>
   <script src="js/libs/bootstrap-modal-3.0.0.js"></script>

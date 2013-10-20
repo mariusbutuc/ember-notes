@@ -21,7 +21,7 @@ body {
     padding: 10px;
 }
 
-#selectedNote {
+#selected-note {
     background: #fff;
     position: absolute;
     left: 270px;
@@ -34,11 +34,11 @@ body {
     text-align: center;
 }
 
-#selectedNote h1 {
+#selected-note h1 {
     text-align: center;
 }
 
-#selectedNote textarea {
+#selected-note textarea {
     background: url('../notebook.png') repeat-y;
     width: 80%;
     height: 80%;
@@ -49,15 +49,15 @@ body {
     border: solid 1px #ddd;
 }
 
-.floatLeft {
+.float-left {
   float: left;
 }
 
-.floatRight {
+.float-right {
     float: right;
 }
 
-.floatNone {
+.float-none {
     float: none;
 }
 
@@ -65,36 +65,36 @@ body {
     width: 120px;
 }
 
-.mediumTopPadding {
+.medium-top-padding {
     margin-top: 9px;
     margin-right: 9px;
 }
 
-.smallTopPadding {
+.small-top-padding {
     margin-top: 5px;
     margin-right: 5px;
 }
-.centerAlign {
+.center-align {
     text-align: center;
 }
 
-.fillWidth {
+.fill-width {
     width: 100%;
 }
 
-.almostFillWidth {
+.almost-fill-width {
     width: 98%;
 }
 
-.smallMarginRight {
+.small-margin-right {
   margin-right: 5px;
 }
 
-.smallMarginBottom {
+.small-margin-bottom {
     margin-bottom: 4px;
 }
 
-.noBorderTop {
+.no-border-top {
     border-top: none;
 }
 
@@ -102,19 +102,19 @@ body {
     cursor: pointer;
 }
 
-.fullWidth {
+.full-width {
     width: 95%;
 }
 
-.azureBlueBackground {
+.azure-blue-background {
     background-color: #F0F8FF;
 }
 
-.azureBlueBorderThin {
+.azure-blue-border-thin {
     border: 1px solid #CEDFED;
 }
 
-.noteListItem {
+.note-list-item {
     -moz-border-radius: 10px;
     border-radius: 10px;
     padding: 7px;
@@ -124,4 +124,7 @@ body {
 .is-selected {
     background: #0088cc;
     color: #f1f4ee;
+}
+.list-group {
+    margin-top: 10px;
 }
