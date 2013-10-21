@@ -19,6 +19,10 @@
         {{#each controller}}
           {{#linkTo 'notes.note' this class="list-group-item"}}
             {{name}}
+            {{#if introduction}}
+              <br />
+              {{introduction}}
+            {{/if}}
 
             <button {{action 'deleteNote' this}}
                     class="btn btn-danger btn-xs pull-right">Delete</button>
@@ -29,19 +33,21 @@
 
     {{outlet}}
 
-    {{partial confirmDialog}}
+    {{partial confirm-dialog}}
   </script>
 
   <script type="text/x-handlebars" data-template-name="notes/note">
     <div id="selected-note">
-      <h1>name: {{name}}</h1>
-      {{view Ember.TextArea valueBinding="value"}}
-      <button {{action 'updateNote'}}
-              class="btn btn-primary form-control medium-top-padding">Update</button>
+      {{#if model}}
+        <h1>name: {{controller.model.name}}</h1>
+        {{view Ember.TextArea valueBinding="value"}}
+        <button {{action 'updateNote'}}
+                class="btn btn-primary form-control medium-top-padding">Update</button>
+      {{/if}}
     </div>
   </script>
 
-  <script type="text/x-handlebars" data-template-name="confirmDialog">
+  <script type="text/x-handlebars" data-template-name="confirm-dialog">
     <div id="confirm-delete-note-dialog" class="modal fade">
       <div class="modal-dialog">
         <div class="modal-content">

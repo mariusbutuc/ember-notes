@@ -1,52 +1,52 @@
 body {
-    padding: 10px;
-    background-color: #ffffff;
-    font-family: Rockwell, Verdana, sans-serif;
-    letter-spacing: 0em;
-    color: #353B40;
-    margin: 0px;
-    padding: 0px;
-    font-size: 1.1em;
+  padding: 10px;
+  background-color: #ffffff;
+  font-family: Rockwell, Verdana, sans-serif;
+  letter-spacing: 0em;
+  color: #353B40;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.1em;
 }
 
 #notes {
-    background: aliceBlue;
-    border-radius: 8px;
-    position: absolute;
-    left: 10px;
-    width: 230px;
-    top: 10px;
-    bottom:10px;
-    overflow: scroll;
-    padding: 10px;
+  background: aliceBlue;
+  border-radius: 8px;
+  position: absolute;
+  left: 10px;
+  width: 230px;
+  top: 10px;
+  bottom:10px;
+  overflow: scroll;
+  padding: 10px;
 }
 
 #selected-note {
-    background: #fff;
-    position: absolute;
-    left: 270px;
-    right: 10px;
-    top: 10px;
-    bottom: 10px;
-    border: 1px solid #cdd0d4;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
+  background: #fff;
+  position: absolute;
+  left: 270px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  border: 1px solid #cdd0d4;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
 }
 
 #selected-note h1 {
-    text-align: center;
+  text-align: center;
 }
 
 #selected-note textarea {
-    background: url('../notebook.png') repeat-y;
-    width: 80%;
-    height: 80%;
-    font: normal 14px verdana;
-    line-height: 25px;
-    padding: 2px 10px;
-    padding-left: 95px;
-    border: solid 1px #ddd;
+  background: url('../notebook.png') repeat-y;
+  width: 80%;
+  height: 80%;
+  font: normal 14px verdana;
+  line-height: 25px;
+  padding: 2px 10px;
+  padding-left: 95px;
+  border: solid 1px #ddd;
 }
 
 .float-left {
@@ -54,36 +54,36 @@ body {
 }
 
 .float-right {
-    float: right;
+  float: right;
 }
 
 .float-none {
-    float: none;
+  float: none;
 }
 
 .input-small {
-    width: 120px;
+  width: 120px;
 }
 
 .medium-top-padding {
-    margin-top: 9px;
-    margin-right: 9px;
+  margin-top: 9px;
+  margin-right: 9px;
 }
 
 .small-top-padding {
-    margin-top: 5px;
-    margin-right: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 .center-align {
-    text-align: center;
+  text-align: center;
 }
 
 .fill-width {
-    width: 100%;
+  width: 100%;
 }
 
 .almost-fill-width {
-    width: 98%;
+  width: 98%;
 }
 
 .small-margin-right {
@@ -91,40 +91,44 @@ body {
 }
 
 .small-margin-bottom {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .no-border-top {
-    border-top: none;
+  border-top: none;
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .full-width {
-    width: 95%;
+  width: 95%;
 }
 
 .azure-blue-background {
-    background-color: #F0F8FF;
+  background-color: #F0F8FF;
 }
 
 .azure-blue-border-thin {
-    border: 1px solid #CEDFED;
+  border: 1px solid #CEDFED;
 }
 
 .note-list-item {
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    padding: 7px;
-    line-height: 17px;
-    vertical-align: middle;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 7px;
+  line-height: 17px;
+  vertical-align: middle;
 }
 .is-selected {
-    background: #0088cc;
-    color: #f1f4ee;
+  background: #0088cc;
+  color: #f1f4ee;
 }
+
 .list-group {
-    margin-top: 10px;
+  margin-top: 10px;
+}
+.form-control {
+  width: 25%;
 }

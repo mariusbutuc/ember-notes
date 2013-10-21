@@ -35,13 +35,23 @@ Notes.Store = DS.Store.extend({
 });
 
 Notes.Note = DS.Model.extend({
-  name: DS.attr('string'),
-  value: DS.attr('string')
+  name:         DS.attr('string'),
+  value:        DS.attr('string'),
+  introduction: function() {
+    var intro = '';
+
+    if (this.get('value')) {
+      intro = this.get('value').substring(0, 20);
+    }
+
+    return intro;
+  }.property('value')
 });
 
 Notes.NotesController = Ember.ArrayController.extend({
-  needs: ['notesNote'],
-  newNoteName: null,
+  needs:                ['notesNote'],
+  newNoteName:          null,
+  selectedNoteBinding:  'controllers.notesNote.model',
 
   actions: {
     createNewNote: function() {
